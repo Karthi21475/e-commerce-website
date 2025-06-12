@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 
 const isAdmin=async(req,res,next)=>{
-    if(!req.user?.isadmin){
+    if(!res.user.isadmin){
         return res.json({message:'Access denied! Admins only.'});
     }
     

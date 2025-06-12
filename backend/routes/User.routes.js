@@ -4,13 +4,17 @@ import Authenticate from "../middlewares/Auth.js";
 import Usermodel from "../models/Usermodel.js";
 import bcrypt from "bcryptjs";
 import cookieParser from 'cookie-parser';
+import isAdmin from '../middlewares/isAdmin.js';
 
 const router=express.Router();
 
 
 
 router.post('/auth',Authenticate,async(req,res)=>{
-    res.json('User Authenticated')
+    res.json({message:'User Authenticated'})
+})
+router.post('/admincheck',Authenticate,isAdmin,async(req,res)=>{
+    res.json({message:'Is Admin'})
 })
 router.post('/signup',async(req,res)=>{
 
