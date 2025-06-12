@@ -6,8 +6,7 @@
   "scripts": {
     "frontend": "cd frontend && npm run dev",
     "backend": "nodemon backend/index.js",
-    "build": "cd frontend && npm run build",
-    "push":"git add . && git commit -m 'quick update' && git push"
+    "build": "cd frontend && npm run build"
   },
   "keywords": [],
   "author": "",
