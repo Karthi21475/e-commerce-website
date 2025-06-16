@@ -9,7 +9,7 @@ function ProductsPage() {
     const [arr,setarr]=useState([]);
     useEffect(()=>{
         const getproducts=async()=>{
-            const res=await axios.get('http://localhost:3000/api/products');
+            const res=await axios.get('/api/products');
             setarr(res.data);
             setprods(res.data);
         }
