@@ -20,12 +20,12 @@ app.use('/api/cart',CartRoutes);
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname =path.dirname(__filename);
-app.use(express.static(path.join(__dirname,'../frontend/dist')));
+app.use(express.static(path.join(__dirname,'../docs/dist')));
 
 mongoose.connect("mongodb://localhost:27017/myDatabase").then(() => console.log("MongoDB Connected")).catch(err => console.log(err));
 
 app.get('/*all',( req, res) => { 
-    res.sendFile(path.join(__dirname,"../frontend/dist/index.html"));
+    res.sendFile(path.join(__dirname,"../docs/dist/index.html"));
 })
 
 app.listen(3000,()=>{console.log("server listening at http://localhost:3000")});
