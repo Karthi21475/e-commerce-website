@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios'
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 function Adminchecker({children}) {
 
     const [isadmin,setisadmin]=useState(false);

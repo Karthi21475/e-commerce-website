@@ -1,0 +1,14 @@
+.proditem-cont{
+    display:flex;
+    flex-direction: column;
+    max-width:250px;
+    background-color: red;
+    flex:1 0 250px;
+    padding:1rem;
+}
+.proditem-cont img{
+    object-fit: contain;
+}
+.proditem-cont h1{
+    font-size:clamp(0.875rem, 1vw, 1rem);
+}

@@ -1,0 +1,31 @@
+.cartitem-cont{
+    max-width:90vw;
+    min-width:90vw;
+    max-height:5rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    padding:2rem;
+}
+.cartitem-details img{
+    object-fit: contain;
+    max-height:4rem;
+}
+.cartitem-details h1{
+    font-size:clamp(0.875rem, 1vw, 1rem);
+}
+.cartitem-details{
+    display:flex;
+    gap:20px;
+}
+.quant-wrapper{
+    display:flex;
+    align-items: center;
+    background-color: #242424;
+    height:fit-content;
+    border-radius:10px;
+}
+.quant-wrapper button{
+    border:none;
+}

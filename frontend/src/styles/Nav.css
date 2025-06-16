@@ -1,6 +1,6 @@
 .nav-container{
     display:flex;
-    max-height:4rem;
+    max-height:6rem;
     padding: 2rem;
     background-color:red;
     justify-content: space-around;

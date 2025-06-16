@@ -5,6 +5,7 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import UserRoutes from "./routes/User.routes.js";
 import ProductRoutes from "./routes/product.routes.js";
+import CartRoutes from './routes/cart.routes.js'
 import path from 'path';
 import { fileURLToPath } from "url";
 
@@ -15,6 +16,7 @@ app.use(cors());
 app.use(cookieParser());
 app.use('/api/user',UserRoutes);
 app.use('/api/products',ProductRoutes);
+app.use('/api/cart',CartRoutes);
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname =path.dirname(__filename);

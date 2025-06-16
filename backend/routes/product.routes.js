@@ -7,6 +7,7 @@ const router =express.Router();
 
 router.route('/').post(Authenticate,isAdmin,async(req,res)=>{
     const {price,productid,productname,image}=req.body;
+    console.log(req.body);
     const details = {productid,productname,price,image};
     const Newproduct = new Product(details)
     try{
